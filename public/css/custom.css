@@ -1,0 +1,21 @@
+* {
+    font-family: Microsoft JhengHei;
+}
+
+.bg-custom {
+    background-color: #414e4c;
+}
+.btn-custom {
+    background-color: #bcc4c1;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+.fa-google {
+    color: #ea4335;
+}
+
+.fa-instagram-square {
+    color: #f56040;
+}
