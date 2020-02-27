@@ -60,9 +60,33 @@ Route::group(['prefix' => 'materials'], function () {
         return view('materials.index');
     })->name('materials');
 
-    Route::get('/upload', function () {
-        return view('materials.upload');
-    })->name('upload');
+    Route::get('/gold', function () {
+        return view('materials.gold');
+    })->name('materials.gold');
+
+    Route::get('/wood', function () {
+        return view('materials.wood');
+    })->name('materials.wood');
+
+    Route::get('/ceramics', function () {
+        return view('materials.ceramics');
+    })->name('materials.ceramics');
+
+    Route::get('/bamboo', function () {
+        return view('materials.bamboo');
+    })->name('materials.bamboo');
+
+    Route::get('/paint', function () {
+        return view('materials.bamboo');
+    })->name('materials.paint');
+
+    Route::get('/stone', function () {
+        return view('materials.stone');
+    })->name('materials.stone');
+
+    Route::get('/fiber', function () {
+        return view('materials.fiber');
+    })->name('materials.fiber');
 });
 
 Route::group(['prefix' => 'creates'], function () {
@@ -81,6 +105,10 @@ Route::group(['prefix' => 'personal'], function () {
     Route::get('/', function () {
         return view('personal.index');
     })->name('personal');
+
+    Route::get('/portfolio', function () {
+        return view('personal.portfolio');
+    })->name('portfolio');
 });
 
 Route::group(['prefix' => 'relations'], function () {
